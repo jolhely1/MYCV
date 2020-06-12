@@ -56,18 +56,31 @@
     max-height: 200px;
     position: relative;
   }
+  .box{
+    display: flex;
+    flex-direction: row;
+  }
   .yohei {
     /* height:200px; */
+    display: inline;
     font-size: 15rem;
     font-weight: 700;
-    line-height: 159px;
+    line-height: 180px;
     text-align: center;
-    letter-spacing: -18px;
+    letter-spacing: -20px;
   }
-  span{
+  .i{
+    display: inline;
+    font-size: 16rem;
+    font-weight: 900;
+    line-height: 150px;
+    /* text-align: center; */
+    /* letter-spacing: -15px; */
+  }
+  /* span{
     font-size: 15rem;
     font-weight: 900;
-  }
+  } */
   .iam {
     color: white;
     font-size: 3.5rem;
@@ -84,7 +97,7 @@
     letter-spacing: -3px;
     position: absolute;
     top: 54px;
-    left: 568px;
+    left: 560px;
     transform: rotate(90deg);
   }
 
