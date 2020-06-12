@@ -70,10 +70,17 @@
     letter-spacing: -20px;
   }
   .i{
-    display: inline;
+    background-color: black;
+    content: "";
+    width: 100px;
+    height: 172px;
+    position: absolute;
+    top: 1px;
+    left: 620px;
+    /* display: inline;
     font-size: 16rem;
     font-weight: 900;
-    line-height: 150px;
+    line-height: 150px; */
     /* text-align: center; */
     /* letter-spacing: -15px; */
   }
