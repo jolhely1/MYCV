@@ -307,7 +307,60 @@ top:42rem; */
     /* position: absolute;
     top:180px; */
   }
-
+  .arrow{
+    width:4em;
+   /*  background-color:black; */
+    font-size:10px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    position:absolute;
+    top:550px;
+    left:640px;
+    transform:rotate(0deg);
+    position:relative;
+   opacity:0.8;
+    transition:1s;
+   }
+   .container:hover .arrow{
+     opacity: 0;
+   }
+   .triangle{
+    width:0px;
+    height:0px;
+     border-right: 1em solid transparent;
+     border-bottom: 3em solid gray;
+     border-left: 1em solid transparent; 
+   }
+   
+   .square{
+    width:1em;
+    height:15em;
+   background-color:gray;
+    position:absolute;
+    top:2.7em;
+    
+   }
+   
+   .triangle2{
+    width:0px;
+    height:0px;
+     border-right: 1em solid transparent;
+     border-bottom: 3em solid gray;
+     border-left: 1em solid transparent; 
+    transform:rotate(180deg);
+    position:absolute;
+    top:17em;
+   }
+   
+   .insidetext{
+    font-size:1.3em;
+    position:absolute;
+    top:5em;
+    left:-2.3em;
+    text-align:center;
+    line-height: 1.5em;
+   }
   /* mobile */
   @media screen and (max-width: 590px) {
     .background{
