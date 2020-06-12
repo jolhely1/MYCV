@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+  }
+  body{
+    font-family:  sans-serif;
+    font-size: 13px;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  a::before{
+    content:"--> ";
+  }
+  .background {
+    background-color: black;
+    padding: 50px 0;
+    /* a4sizeの位置指定 */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .a4size {
+    margin: 50px 0 50px;
+    background-color: white;
+    width: 723px;
+    height: 1023px;
+    /* containerの配置指定 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .first .container {
+    /* 四方20pxづつのマージン */
+    width: 683px;
+    height: 983px;
+    overflow: hidden;
+    position: relative;
+  }
+  .bg1{
+    position: absolute;
+    top:110px;
+    left:-200px;
+  }
+  /* HEADER SECTION */
+  /* header{
+    max-width: 100%;
+    height: auto;
+    z-index: 10;
+  } */
+  .header-container{
+    /* 幅はcontainerに対して100%指定してます */
+    max-width: 100%;
+    max-height: 200px;
+    position: relative;
+  }
+  .yohei {
+    /* height:200px; */
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 159px;
+    text-align: center;
+    letter-spacing: -18px;
+  }
+  span{
+    font-size: 15rem;
+    font-weight: 900;
+  }
+  .iam {
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: -3px;
+    position: absolute;
+    top: 14px;
+    transform: rotate(58deg);
+  }
+  .osada {
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: -3px;
+    position: absolute;
+    top: 54px;
+    left: 568px;
+    transform: rotate(90deg);
+  }
+
+
+  /* BASIC INFO SECTION */
+.border{
+  width: 99.5%;
+  margin: 0 auto;
+  border-bottom: black solid 3px;
+  border-top: black solid 3px;
+  position: absolute;
+  top:180px;
+}
+
+
+.basic-info{
+  width: 100%;
+  height: 1.3rem;
+  line-height: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+.item{
+  font-weight: 600;
+}
+.item i{
+  padding: 0 0.3rem 0 0;
+}
+  /* scroll CONTAINER SECTION */
+.scroll-container{
+  width: 683px;
+  height: 79%;
+  overflow: scroll;
+  position: absolute;
+  top:210px;
+  /* background-color: rgba(5, 5, 5, 0.5); */
+}
+.scroll-container::-webkit-scrollbar{
+  display: none;
+}
+
+  /* MAIN SECTION */
+  .main {
+    /* content: ""; */
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 1px;
+    background-color: rgba(5, 5, 5, 5);
+  }
+  .main-container{
+    position: relative;
+    background-color: rgba(5, 5, 5, 0.5);
+  }
+  .profile {
+    width:100%;
+    height: 100%;
+    background-color: rgba(5, 5, 5, 0.5);
+    position: absolute;
+    top: 0;
+    z-index: 10;
+  }
+  /* EDUCATION PART */
+  .education {
+    /* padding-top: 5px; */
+    width: 100%;
+  }
+  .education p{
+   margin-left:2em;
+  }
+  /* WORK EXPERIENCE PART */
+  .experience {
+    /* padding-top: 20px; */
+    width: 58%;
+  }
+  .experience p{
+   margin-left:2em;
+  }
+/* SKILL PART */
+  .skills {
+    /* padding-top: 60px; */
+    width: 100%;
+    /* background-color: rgba(5, 5, 5, 0.5); */
+  }
+  .skills th{
+    background-color: rgba(255, 255, 255, 0);
+   font-weight:normal;
+   float:left;
+   margin-left:1.5em;
+  }
+  .skills td{
+   padding-left:1em;
+  }
+  .skills td:before{
+   content:"-- ";
+  }
+
+/* DEAILS PART */
+h3{
+  margin-top: 2rem;
+  text-transform: uppercase;
+  /* border: black 1px solid; */
+}
+  h4{
+  margin-top:11px;
+  margin-left:1em;
+
+  }
+  h5{
+  margin-left: 1.7em;
+  }
+
+  /* Second page section */
+.second .container{
+  /* 四方20pxづつのマージン */
+  width: 683px;
+  height: 983px;
+  overflow: hidden;
+  position: relative;
+  background-color: rgba(5, 5, 5, 0.5);
+}
+.my-work-container{
+  /* content: ""; */
+  width: 55%;
+  /* height: 20rem; */
+  /* background-color: rgba(5, 5, 5, 0.5); */
+  /* border: black 1px solid; */
+  display: flex;
+  flex-direction: column-reverse;
+}
+.link{
+width: 100%;
+padding-left: 1.5rem;
+/* max-height: 18rem; */
+}
+.text{
+width: 100%;
+/* height: 17rem; */
+/* background-color: rgba(5, 5, 5, 0.5); */
+}
+.text p{
+  margin-top: 1rem;
+
+  margin-left: 1.5rem;
+}
+.character-container{
+    /* content: ""; */
+    width: 60%;
+    /* height: 20rem; */
+    /* background-color: rgba(5, 5, 5, 0.5); */
+    /* border: black 1px solid; */
+    /* position: absolute;
+    top:21rem; */
+  }
+  .character-container h3{
+    margin-bottom: .8rem;
+  }
+  .character-container p{
+    margin-top: .3rem;
+    margin-left: 1.5rem;
+
+  }
+
+  .additional-container{
+/* content: ""; */
+width: 55%;
+/* height: 15rem; */
+/* background-color: rgba(5, 5, 5, 0.5); */
+/* border: black 1px solid; */
+/* position: absolute;
+top:42rem; */
+  }
+  .additional-container table{
+    margin-top: 0.5rem;
+  }
+  .additional-container th{
+    background-color: rgba(255, 255, 255, 0);
+   font-weight:normal;
+   float:left;
+   margin-left:1.5em;
+  }
+  .additional-container td{
+    padding-left:1em;
+   }
+   .additional-container td:before{
+    content:"-- ";
+   }
+
+  footer{
+    width: 99.5%;
+    height: 2rem;
+    /* background-color: rgba(5, 5, 5, 0.5); */
+  }
+  .footer{
+    width: 99.5%;
+    margin: 1.5rem auto 0;
+    border-bottom: black solid 3px;
+    border-top: black solid 3px;
+    /* background-color: rgba(5, 5, 5, 0.5); */
+    /* position: absolute;
+    top:180px; */
+  }
